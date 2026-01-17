@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/icons/favicon.ico">
+  <title>Meet Patel</title>
+  <meta name="description" content="Meet Patel - Data, Software, and ML projects portfolio." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="container nav-inner">
+
+      <!-- Left -->
+      <a class="brand" href="#top">Meet<span class="dot">.</span></a>
+
+      <!-- Center -->
+      <nav class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Right -->
+      <div class="nav-icons">
+        <a class="icon-btn" href="https://linkedin.com/in/meet-patel-b47518319" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          in
+        </a>
+        <a class="icon-btn" href="https://github.com/meet-innovate" target="_blank" rel="noreferrer" aria-label="GitHub">
+          GH
+        </a>
+      </div>
+
+      <!-- Mobile button -->
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <div class="mobile-icons">
+        <a class="icon-btn" href="https://linkedin.com/in/meet-patel-b47518319" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="icon-btn" href="https://github.com/meet-innovate" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <p class="big-kicker">Hello, I’m Meet Patel</p>
+
+        <h1 class="smaller-headline">
+          I build dashboards, web apps, and ML demos.
+        </h1>
+
+        <p class="medium-subhead">
+          Data-driven dashboards • Full-stack projects • Synthetic data (VAE/GAN/LSTM)
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Data Analysis</span>
+          <span class="chip">Software Dev</span>
+          <span class="chip">Machine Learning</span>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="profile-card">
+          <img class="profile-img" src="images/profile.jpg" alt="Profile photo" />
+          <div class="profile-info">
+            <p class="profile-name">Meet Patel</p>
+            <p class="profile-role">CS Graduate • North Bay, ON</p>
+            <div class="profile-links">
+              <a href="https://github.com/meet-innovate" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://linkedin.com/in/meet-patel-b47518319" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Projects -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Featured Projects</h2>
+      <p class="muted">A few projects across Data, Software, and Machine Learning.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <!-- Project 1 -->
+      <article class="project-card reveal">
+        <div class="project-media">
+          <span class="project-badge">Featured</span>
+          <img src="images/end-moment-ride.jpeg" alt="End Moment Ride project preview" />
+
+          <div class="project-overlay">
+            <p class="overlay-text">
+              Ride-sharing web app concept with fare splitting + loyalty points.
+            </p>
+            <div class="overlay-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <h3>End Moment Ride</h3>
+          <p class="muted">Ride-sharing web app concept with fare splitting and loyalty points.</p>
+
+          <div class="tags">
+            <span>Full-stack</span><span>API</span><span>System Design</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal">
+        <div class="project-media">
+          <span class="project-badge">Featured</span>
+          <img src="images/synthetic-data.png" alt="Synthetic Data VAE GAN preview" />
+
+          <div class="project-overlay">
+            <p class="overlay-text">
+              Synthetic tabular + time-series data generation using VAE/GAN.
+            </p>
+            <div class="overlay-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Report</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <h3>Synthetic Data (VAE / GAN)</h3>
+          <p class="muted">Generated synthetic tabular/time-series data and compared results.</p>
+
+          <div class="tags">
+            <span>TensorFlow</span><span>VAE</span><span>GAN</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal">
+        <div class="project-media">
+          <span class="project-badge">Featured</span>
+          <img src="images/data-dashboard.png" alt="Data Dashboard preview" />
+
+          <div class="project-overlay">
+            <p class="overlay-text">
+              Interactive dashboard that turns raw data into clear insights.
+            </p>
+            <div class="overlay-actions">
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-body">
+          <h3>Data Dashboard Project</h3>
+          <p class="muted">Interactive dashboard that turns raw data into clear insights.</p>
+
+          <div class="tags">
+            <span>Python</span><span>Visualization</span><span>Analytics</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="section-head reveal" style="margin-top:3rem;">
+      <h3>More Projects on GitHub</h3>
+      <p class="muted">Recent repositories and ongoing work.</p>
+    </div>
+
+    <div id="github-projects" class="grid-3 reveal"></div>
+    <p id="github-status" class="muted"></p>
+  </div>
+</section>
+
+  <!-- Skills -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Skills</h2>
+      <p class="muted">What I build and support — summarized in clear areas.</p>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-icon">📊</div>
+          <h3>Data</h3>
+        </div>
+        <p class="muted">
+          Data cleaning, analysis, and dashboards using Python, Pandas, and SQL to turn raw data into insights.
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX</h3>
+        </div>
+        <p class="muted">
+          Clean layouts, consistent spacing, and user-friendly design for portfolio and web app interfaces.
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-icon">💻</div>
+          <h3>Front-end</h3>
+        </div>
+        <p class="muted">
+          Responsive pages with HTML, CSS, and JavaScript — focused on performance and clean structure.
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-icon">🧩</div>
+          <h3>Web Designing</h3>
+        </div>
+        <p class="muted">
+          Modern sections, cards, typography, and layouts that feel professional for recruiters and clients.
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-icon">🤖</div>
+          <h3>Machine Learning</h3>
+        </div>
+        <p class="muted">
+          ML demos and synthetic data projects using TensorFlow/Keras (VAE, GAN, LSTM) with clear visuals.
+        </p>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-top">
+          <div class="skill-icon">🔌</div>
+          <h3>API Integration</h3>
+        </div>
+        <p class="muted">
+          Working with REST APIs, fetching data, handling responses, and connecting frontend with backend services.
+        </p>
+      </article>
+    </div>
+  </div>
+  <div class="skills-stats reveal">
+  <div class="stat">
+    <span id="ghRepos">—</span>
+    <p>Public Repos</p>
+  </div>
+
+  <div class="stat">
+    <span id="ghStars">—</span>
+    <p>Total Stars</p>
+  </div>
+
+  <div class="stat">
+    <span id="ghFollowers">—</span>
+    <p>GitHub Followers</p>
+  </div>
+</div>
+
+</section>
+
+
+<!-- Experience -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Experience</h2>
+      <p class="muted">Relevant roles that show real-world work and responsibility.</p>
+    </div>
+
+    <div class="timeline">
+
+      <article class="xp-card reveal">
+        <div class="xp-top">
+          <div>
+            <h3>Prompt Engineer</h3>
+            <p class="muted xp-meta">Outlier · Contract (Part-time) · Remote (Canada)</p>
+            <p class="muted xp-meta">Jan 2024 – May 2025 · 1 yr 5 mos</p>
+          </div>
+          <span class="xp-badge">AI / LLM</span>
+        </div>
+
+        <ul class="xp-list">
+          <li>Labeled complex datasets for LLM training, improving model accuracy and reasoning.</li>
+          <li>Created, reviewed, and evaluated prompts for AI model alignment.</li>
+          <li>Worked independently with high attention to detail and weekly output targets.</li>
+        </ul>
+      </article>
+
+      <article class="xp-card reveal">
+        <div class="xp-top">
+          <div>
+            <h3>IT Systems &amp; Software Support Associate</h3>
+            <p class="muted xp-meta">Yash Tooling System · Contract (Full-time) · Hybrid (India)</p>
+            <p class="muted xp-meta">Jan 2020 – Sep 2021 · 1 yr 9 mos</p>
+          </div>
+          <span class="xp-badge">IT Support</span>
+        </div>
+
+        <ul class="xp-list">
+          <li>Installed, configured, and maintained Windows systems and application software.</li>
+          <li>Handled database queries and improved small internal tools using Python/SQL.</li>
+          <li>Resolved 20–40 weekly internal tech tickets with fast response and documentation.</li>
+          <li>Supported networking basics: routers, switches, LAN troubleshooting.</li>
+        </ul>
+      </article>
+
+      <article class="xp-card reveal">
+  <div class="xp-top">
+    <div>
+      <h3>Software Developer</h3>
+      <p class="muted xp-meta">Silver Wings Technology · Contract</p>
+      <p class="muted xp-meta">India · On-site / Hybrid</p>
+    </div>
+    <span class="xp-badge">Developer</span>
+  </div>
+
+  <ul class="xp-list">
+    <li>Developed and maintained software features using core programming concepts and web technologies.</li>
+    <li>Worked on frontend components and basic backend logic following project requirements.</li>
+    <li>Debugged issues, improved code reliability, and assisted with testing and deployment tasks.</li>
+    <li>Collaborated with team members to deliver functional solutions within deadlines.</li>
+  </ul>
+</article>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Education</h2>
+      <p class="muted">My academic background in Computer Science.</p>
+    </div>
+
+    <div class="edu-grid">
+
+  <!-- Nipissing University -->
+  <a href="https://www.nipissingu.ca"
+   target="_blank"
+   rel="noreferrer"
+   class="edu-card reveal edu-link">
+
+  <img
+    src="images/nipissing-logo.png"
+    alt="Nipissing University logo"
+    class="edu-logo"
+  />
+
+  <h3>Bachelor of Science (Honours)</h3>
+  <p class="muted">Computer Science</p>
+
+  <p class="edu-meta">
+    Nipissing University · North Bay, Ontario, Canada<br>
+    <span class="edu-year">Graduated: 2025</span>
+  </p>
+</a>
+
+  <!-- Diploma -->
+  <a href="https://www.gtu.ac.in"
+   target="_blank"
+   rel="noreferrer"
+   class="edu-card reveal edu-link">
+
+  <img
+    src="images/gtu-logo.png"
+    alt="Gujarat Technological University logo"
+    class="edu-logo"
+  />
+
+  <h3>Diploma in Computer Science / Computer Engineering</h3>
+  <p class="muted">Technical Diploma Program</p>
+
+  <p class="edu-meta">
+    Gujarat Technological University (GTU) · India<br>
+    <span class="edu-year">Completed: 2020</span>
+  </p>
+
+  <!-- WES Badge -->
+  <img
+    src="images/wes-badge.png"
+    alt="WES Credential Evaluation"
+    class="wes-badge"
+  />
+</a>
+
+
+</div>
+
+</section>
+
+
+  <!-- About -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-head reveal about-head">
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <!-- Left: Photo -->
+      <div class="about-photo reveal">
+        <div class="photo-ring">
+          <img src="images/profile1.jpg" alt="Meet Patel photo" />
+        </div>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="about-content reveal">
+        <h3 class="about-title">
+          Computer Science (Honours) graduate building data dashboards, web apps, and ML demos.
+        </h3>
+
+        <p class="about-text muted">
+          I like turning messy problems into simple, clear solutions — whether it’s a dashboard that explains the story in data,
+          a full-stack feature, or a machine learning demo with clean visuals and documentation.
+        </p>
+
+        <!-- Bullet skills -->
+        <div class="about-bullets">
+      <div class="bullet"><span class="check">✓</span> Data Analysis & Dashboards</div>
+       <div class="bullet"><span class="check">✓</span> Front-end Development</div>
+  <div class="bullet"><span class="check">✓</span> Web Designing (UI-focused)</div>
+  <div class="bullet"><span class="check">✓</span> API Integration & Data Handling</div>
+  <div class="bullet"><span class="check">✓</span> IT Support & Troubleshooting</div>
+  <div class="bullet"><span class="check">✓</span> Machine Learning Models (VAE, GAN, LSTM)</div>
+</div>
+
+        <!-- Contact chips -->
+        <div class="about-contact">
+          <a class="contact-chip" href="mailto:meetpatel261204@gmail.com">
+            <span class="chip-icon">✉</span>
+            <span>
+              <small class="muted">Email Me</small>
+              <strong>meetpatel261204@gmail.com</strong>
+            </span>
+          </a>
+
+          <a class="contact-chip" href="https://linkedin.com/in/meet-patel-b47518319" target="_blank" rel="noreferrer">
+            <span class="chip-icon">in</span>
+            <span>
+              <small class="muted">LinkedIn</small>
+              <strong>Meet Patel</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contact -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal contact-head">
+      <h2>Contact</h2>
+      <p class="muted">
+        Interested in working together or have a question?  
+        I’m happy to connect.
+      </p>
+    </div>
+
+    <div class="contact-grid reveal">
+
+      <a class="contact-card email"
+         href="mailto:meetpatel261204@gmail.com">
+        <div class="contact-icon">✉</div>
+        <div>
+          <h4>Email</h4>
+          <p>meetpatel261204@gmail.com</p>
+        </div>
+      </a>
+
+      <a class="contact-card linkedin"
+         href="https://linkedin.com/in/meet-patel-b47518319"
+         target="_blank" rel="noreferrer">
+        <div class="contact-icon">in</div>
+        <div>
+          <h4>LinkedIn</h4>
+          <p>Connect with me</p>
+        </div>
+      </a>
+
+      <a class="contact-card github"
+         href="https://github.com/meet-innovate"
+         target="_blank" rel="noreferrer">
+        <div class="contact-icon">GH</div>
+        <div>
+          <h4>GitHub</h4>
+          <p>View my projects</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Meet Patel. Built by Meet</p>
+    </div>
+  </footer>
+
+<!-- Page intro overlay (opening animation) -->
+<div class="intro-overlay" aria-hidden="true">
+  <div class="intro-wipe"></div>
+</div>
+
+<!-- Cursor dot -->
+<div class="cursor-dot" aria-hidden="true"></div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
