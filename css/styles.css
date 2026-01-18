@@ -1,7 +1,4 @@
-/* ===============================
-   Base + Theme
-================================ */
-
+/* Theme variables */
 :root{
   --bg-main: #F4F4F4;
   --bg-alt: #FFFFFF;
@@ -24,6 +21,7 @@
   --dark-border: rgba(255,255,255,0.12);
 }
 
+/* Base reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -35,10 +33,7 @@ body{
   line-height: 1.6;
 }
 
-/* ===============================
-   Utilities
-================================ */
-
+/* Layout helpers */
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -51,8 +46,7 @@ body{
 
 .muted { color: var(--text-muted); }
 
-
-/* Reveal */
+/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -63,10 +57,7 @@ body{
   transform: translateY(0);
 }
 
-/* ===============================
-   Navbar
-================================ */
-
+/* Navbar */
 .nav {
   position: sticky;
   top: 0;
@@ -149,7 +140,7 @@ body{
   font-size: 1.2rem;
 }
 
-/* Mobile dropdown */
+/* Mobile menu */
 .mobile-menu{
   display: none;
   padding: 0 1.25rem 1rem;
@@ -172,13 +163,7 @@ body{
   padding-top: .6rem;
 }
 
-/* ===============================
-   Hero
-================================ */
-/* ===============================
-   Hero (UPDATED)
-================================ */
-
+/* Hero */
 .hero {
   padding: 5.2rem 0 4.2rem;     /* moved up (was 6.5rem) */
   position: relative;
@@ -200,15 +185,14 @@ body{
   display: grid;
   grid-template-columns: 1.25fr 1fr;
   gap: 3rem;
-  align-items: start;           /* align from top (was center) */
+  align-items: start;           /* align from top for center) */
 }
 
-/* Push left text up a bit */
+/* Push left text down a bit */
 .hero-left{
-  margin-top: 55px;            /* adjust -12 to -26 if needed */
+  margin-top: 55px;            /* adjust -12 to -26 accordingly.. */
 }
 
-/* Bigger "Hello, I'm Meet Patel" */
 .big-kicker{
   font-size: 2.25rem;           /* increased (was 1.05rem) */
   font-weight: 800;
@@ -216,7 +200,6 @@ body{
   margin-bottom: 0.65rem;
 }
 
-/* Smaller headline */
 .smaller-headline{
   font-size: clamp(0.9rem, 2.2vw, 1.7rem);   /* decreased */
   line-height: 1.1;
@@ -231,7 +214,6 @@ body{
   color: var(--text-muted);
   margin-bottom: 1.6rem;
 }
-
 
 .cta {
   display: flex;
@@ -283,10 +265,7 @@ body{
   font-weight: 650;
 }
 
-/* ===============================
-   Profile Card
-================================ */
-
+/* Profile card */
 .profile-card {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -322,10 +301,7 @@ body{
   font-size: .9rem;
 }
 
-/* ===============================
-   Projects
-================================ */
-
+/* Generic cards and grid */
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -363,10 +339,7 @@ body{
 
 .card-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
 
-/* ===============================
-   Skills + Section Alt
-================================ */
-
+/* Dark section helper */
 .section-alt{
   background: var(--dark-bg);
   color: #fff;
@@ -391,10 +364,7 @@ body{
   margin-bottom: .45rem;
 }
 
-/* ===============================
-   About + Contact
-================================ */
-
+/* Simple about/contact wrappers */
 .about-box, .contact-box { max-width: 650px; }
 .contact-box { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -406,10 +376,7 @@ body{
   background: rgba(255,255,255,0.08);
 }
 
-/* ===============================
-   Footer
-================================ */
-
+/* Footer */
 .footer {
   padding: 2rem 0;
   text-align: center;
@@ -417,10 +384,7 @@ body{
   color: var(--text-muted);
 }
 
-/* ===============================
-   Responsive
-================================ */
-
+/* Responsive layout */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
@@ -431,16 +395,12 @@ body{
   .mobile-menu.open{ display: block; }
 }
 
-/* ===============================
-   Skills (NEW - service style cards)
-================================ */
-
+/* Skills cards */
 .skills-section{
   background: #0b1220;
   color: #fff;
-  padding-bottom: 4.5rem;  /* NEW */
+  padding-bottom: 4.5rem;
 }
-
 
 .skills-section .muted{
   color: rgba(255,255,255,0.72);
@@ -499,15 +459,14 @@ body{
   font-size: .98rem;
 }
 
-/* Responsive */
 @media (max-width: 900px){
   .skills-grid{ grid-template-columns: 1fr; }
   .skill-card{ min-height: auto; }
 }
 
-/* Live GitHub Stats */
+/* GitHub stats under skills */
 .skills-stats{
-  margin-top: 1.6rem;    /* was ~2.8rem */
+  margin-top: 1.6rem;
   padding-bottom: 1rem;
   display: flex;
   gap: 3rem;
@@ -515,9 +474,8 @@ body{
   text-align: center;
 }
 
-
 .stat span{
-  font-size: 2.1rem;      /* bigger numbers */
+  font-size: 2.1rem;
   font-weight: 900;
   color: #4A90E2;
   display: block;
@@ -532,7 +490,6 @@ body{
   text-transform: uppercase;
 }
 
-
 @media (max-width: 700px){
   .skills-stats{
     flex-direction: column;
@@ -540,11 +497,7 @@ body{
   }
 }
 
-
-/* ===============================
-   Experience
-================================ */
-
+/* Experience cards */
 .timeline{
   display: grid;
   gap: 1.2rem;
@@ -609,10 +562,7 @@ body{
   padding-top: .8rem;
 }
 
-/* ===============================
-   Education
-================================ */
-
+/* Education cards for dark section */
 .edu-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -651,10 +601,7 @@ body{
   .xp-badge{ align-self: flex-start; }
 }
 
-/* ===============================
-   Education – Logos & Links
-================================ */
-
+/* Education links and logos */
 .edu-link{
   text-decoration: none;
   display: block;
@@ -667,7 +614,6 @@ body{
   background: rgba(255,255,255,0.08);
 }
 
-/* University logo */
 .edu-logo{
   width: 120px;
   height: auto;
@@ -675,7 +621,6 @@ body{
   filter: brightness(1.05);
 }
 
-/* Improve title hierarchy */
 .edu-card h3{
   margin: 0 0 .3rem;
   font-size: 1.15rem;
@@ -688,7 +633,6 @@ body{
   color: rgba(255,255,255,0.75);
 }
 
-/* Metadata line */
 .edu-meta{
   margin-top: .9rem;
   font-size: .9rem;
@@ -697,12 +641,9 @@ body{
   border-top: 1px dashed rgba(255,255,255,0.18);
 }
 
-/* ===============================
-   Education Logos (FINAL)
-================================ */
-
+/* Logo sizing rules  */
 .edu-logo{
-  width: 120px;        /* ideal visible size */
+  width: 120px;
   height: auto;
   margin-bottom: 1rem;
   object-fit: contain;
@@ -713,27 +654,24 @@ body{
   width: 120px;
   max-width: 140px;
 }
-/* Normalize education logos */
+
 .edu-logo{
   width: 120px;
-  height: 64px;              /* visual balance */
+  height: 64px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
 
-/* Dark-background optimization */
 .edu-card:first-child .edu-logo{
   filter: brightness(1.25) contrast(1.05);
 }
 
-/* White-background logos (GTU crest) */
 .edu-card:nth-child(2) .edu-logo{
   background: #ffffff;
   padding: 6px 10px;
   border-radius: 6px;
 }
 
-/* Graduation year */
 .edu-year{
   display: inline-block;
   margin-top: .35rem;
@@ -741,7 +679,6 @@ body{
   color: rgba(255,255,255,0.78);
 }
 
-/* WES badge */
 .wes-badge{
   width: 90px;
   height: auto;
@@ -749,15 +686,11 @@ body{
   opacity: 0.95;
 }
 
-/* Optional subtle hover */
 .edu-link:hover .wes-badge{
   opacity: 1;
 }
 
-/* ===============================
-   About (Template Style)
-================================ */
-
+/* About layout */
 .about-head{
   text-align: center;
   margin-bottom: 2.2rem;
@@ -886,7 +819,6 @@ body{
   font-size: .95rem;
 }
 
-/* Responsive */
 @media (max-width: 900px){
   .about-grid{
     grid-template-columns: 1fr;
@@ -899,10 +831,7 @@ body{
   }
 }
 
-/* ===============================
-   Contact – Redesigned
-================================ */
-
+/* Contact cards */
 .contact-head{
   text-align: center;
 }
@@ -935,7 +864,6 @@ body{
   border-color: rgba(74,144,226,0.6);
 }
 
-/* Icon */
 .contact-icon{
   width: 54px;
   height: 54px;
@@ -948,7 +876,6 @@ body{
   flex-shrink: 0;
 }
 
-/* Text */
 .contact-card h4{
   margin: 0;
   font-size: 1.05rem;
@@ -961,7 +888,6 @@ body{
   opacity: .8;
 }
 
-/* Platform colors */
 .contact-card.email .contact-icon{
   background: #4A90E2;
 }
@@ -975,19 +901,14 @@ body{
 }
 
 .contact-grid{
-  max-width: 1000px; /* wider container */
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.6rem;
 }
 
-
-
-/* ===============================
-   Projects – Images + Badge + Overlay
-================================ */
-
+/* Project cards with image overlay */
 .project-card{
   border-radius: 18px;
   overflow: hidden;
@@ -1003,7 +924,6 @@ body{
   border-color: rgba(74,144,226,0.35);
 }
 
-/* Image container */
 .project-media{
   position: relative;
   width: 100%;
@@ -1012,7 +932,6 @@ body{
   background: linear-gradient(135deg, #1f2937, #0f172a);
 }
 
-/* Image */
 .project-media img{
   width: 100%;
   height: 100%;
@@ -1021,7 +940,6 @@ body{
   transition: transform .35s ease, filter .35s ease;
 }
 
-/* Badge */
 .project-badge{
   position: absolute;
   top: 12px;
@@ -1037,7 +955,6 @@ body{
   box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 }
 
-/* Overlay */
 .project-overlay{
   position: absolute;
   inset: 0;
@@ -1071,7 +988,6 @@ body{
   flex-wrap: wrap;
 }
 
-/* Hover effects */
 .project-card:hover .project-overlay{
   opacity: 1;
   transform: translateY(0);
@@ -1082,7 +998,6 @@ body{
   filter: saturate(1.06);
 }
 
-/* Card body */
 .project-body{
   padding: 1.25rem 1.35rem 1.35rem;
 }
@@ -1095,13 +1010,11 @@ body{
   margin-bottom: .9rem;
 }
 
-/* Make tags consistent */
 .project-card .tags span{
   background: rgba(0,0,0,0.04);
   border: 1px solid rgba(0,0,0,0.06);
 }
 
-/* Dark section support (if you ever place projects on dark bg) */
 .section-alt .project-card{
   background: rgba(255,255,255,0.06);
   border-color: rgba(255,255,255,0.14);
@@ -1112,10 +1025,7 @@ body{
   color: rgba(255,255,255,0.85);
 }
 
-/* ===============================
-   Experience – Overlay Hover
-================================ */
-
+/* Experience hover overlay */
 .timeline{
   display: grid;
   gap: 1.25rem;
@@ -1171,7 +1081,6 @@ body{
   margin-bottom: .45rem;
 }
 
-/* Overlay layer */
 .xp-hover .xp-overlay{
   position: absolute;
   inset: 0;
@@ -1209,13 +1118,11 @@ body{
   margin-bottom: .5rem;
 }
 
-/* Show overlay on hover */
 .xp-hover:hover .xp-overlay{
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Mobile: always show bullets (no hover) */
 @media (max-width: 900px){
   .xp-hover .xp-overlay{
     position: static;
@@ -1233,9 +1140,7 @@ body{
   }
 }
 
-/* ===============================
-   Unique Page Opening Animation
-================================ */
+/* Page intro animation */
 .intro-overlay{
   position: fixed;
   inset: 0;
@@ -1262,14 +1167,11 @@ body{
   100% { transform: translateY(-110%); opacity: 0; }
 }
 
-/* When finished, hide completely */
 .intro-overlay.is-done{
   display: none;
 }
 
-/* ===============================
-   Cursor Follow Dot (Unique Look)
-================================ */
+/* Cursor dot */
 .cursor-dot {
   position: fixed;
   top: 0;
@@ -1285,10 +1187,8 @@ body{
   opacity: 1;
 }
 
-/* Hide only on touch devices */
 @media (hover: none) {
   .cursor-dot {
     display: none;
   }
 }
-

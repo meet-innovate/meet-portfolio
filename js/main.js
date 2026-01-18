@@ -1,15 +1,13 @@
-/* ==========================
-   Meet Portfolio - main.js
-   ========================== */
+/* main.js - Meet Portfolio */
 
 (function () {
   "use strict";
 
-  // ===== CONFIG =====
+  // Basic config
   const GITHUB_USERNAME = "meet-innovate";
   const MAX_REPOS = 6;
 
-  // ===== HELPERS =====
+  // Small helper for querySelector
   const $ = (sel) => document.querySelector(sel);
 
   function formatDate(iso) {
@@ -18,6 +16,7 @@
     return d.toLocaleDateString(undefined, { year: "numeric", month: "short" });
   }
 
+  // Basic HTML escaping for safe rendering
   function escapeHtml(str) {
     if (!str) return "";
     return str.replace(
@@ -33,11 +32,11 @@
     );
   }
 
-  // ===== FOOTER YEAR =====
+  // Footer year
   const yearEl = $("#year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ===== MOBILE MENU =====
+  // Mobile menu toggle
   const menuBtn = $(".menu-btn");
   const mobileMenu = $(".mobile-menu");
 
@@ -49,6 +48,7 @@
       mobileMenu.setAttribute("aria-hidden", String(isOpen));
     });
 
+    // Close menu after clicking any link
     mobileMenu.querySelectorAll("a").forEach((a) => {
       a.addEventListener("click", () => {
         mobileMenu.classList.remove("open");
@@ -58,7 +58,7 @@
     });
   }
 
-  // ===== REVEAL ON SCROLL =====
+  // Reveal animation on scroll
   const revealEls = document.querySelectorAll(".reveal");
   const io = new IntersectionObserver(
     (entries) => {
@@ -70,7 +70,7 @@
   );
   revealEls.forEach((el) => io.observe(el));
 
-  // ===== GITHUB PROJECTS =====
+  // Load GitHub repos into the "More Projects" grid
   async function loadGitHubRepos() {
     const grid = $("#github-projects");
     const status = $("#github-status");
@@ -134,6 +134,7 @@
         })
         .join("");
 
+      // Hook reveal animation for newly added cards
       grid.querySelectorAll(".reveal").forEach((el) => io.observe(el));
       status.textContent = `Showing ${cleaned.length} recent repos from @${GITHUB_USERNAME}.`;
     } catch (err) {
@@ -142,7 +143,7 @@
     }
   }
 
-  // ===== LIVE GITHUB STATS =====
+  // GitHub stats below skills (repos / followers / stars)
   async function loadGitHubStats() {
     try {
       const reposEl = document.getElementById("ghRepos");
@@ -175,16 +176,8 @@
     }
   }
 
-  // ===== INIT =====
-  loadGitHubRepos();
-  loadGitHubStats();
-    // ===== INIT =====
-  loadGitHubRepos();
-  loadGitHubStats();
-
-  // ===== CURSOR DOT (smooth follow) =====
+  // Cursor dot follows the mouse (desktop only)
   const dot = document.querySelector(".cursor-dot");
-
   if (dot) {
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
@@ -209,4 +202,7 @@
     animateDot();
   }
 
+  // Run once on page load
+  loadGitHubRepos();
+  loadGitHubStats();
 })();
